@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dieto</string>
+    <string name="intro_label_one">Body Size</string>
+    <string name="intro_label_two">Diet Plan</string>
+    <string name="intro_label_three">Stay Healthy</string>
+    <string name="intro_text_one">Look at your body size to see if it’s small, medium, or full. According to Ayurveda, each dosha is associated with a different body type.</string>
+    <string name="intro_text_two">Dietary planning may be done at several different levels. It may refer to an individual planning a meal and making relevant food purchases.</string>
+    <string name="intro_text_three">Eat a well-balanced, low-fat diet with lots of fruits, vegetables and whole grains. Choose a diet that\'s low in saturated fat and cholesterol, and moderate in sugar, salt and total fat.</string>
+</resources>

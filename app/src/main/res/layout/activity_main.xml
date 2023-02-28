@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingStart="24dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/home_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_14_black_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to" />
+
+        <TextView
+            style="@style/font_26_green_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:text="Dieto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_setting_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_settings_24" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_logo_layout"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/font_18_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="What's your body type?" />
+
+            <TextView
+                style="@style/font_14_gray_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose diet plan according to your body dosha." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_border_green">
+
+                <ImageView
+                    android:id="@+id/home_vata_image"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_vata_dosha" />
+
+                <TextView
+                    android:id="@+id/home_vata_title"
+                    style="@style/font_24_green_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Vata Dosha" />
+
+                <TextView
+                    android:id="@+id/home_vata_plan"
+                    style="@style/font_16_black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_vata_title"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:text="7 Days, 4 Weeks" />
+
+                <TextView
+                    android:id="@+id/home_vata_description"
+                    style="@style/font_12_gray_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_vata_plan"
+                    android:layout_marginStart="24dp"
+                    android:layout_toStartOf="@+id/home_vata_image"
+                    android:lineHeight="20dp"
+                    android:maxLines="2"
+                    android:text="Get this plan if your body shape is lean &amp; want to gain weight." />
+
+                <Button
+                    android:id="@+id/home_vata_plan_button"
+                    style="@style/font_16_white_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/home_vata_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_fill_green"
+                    android:text="Buy Now ₹299/-"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_border_green">
+
+                <ImageView
+                    android:id="@+id/home_pitta_image"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_pitta_dosha" />
+
+                <TextView
+                    android:id="@+id/home_pitta_title"
+                    style="@style/font_24_green_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Pitta Dosha" />
+
+                <TextView
+                    android:id="@+id/home_pitta_plan"
+                    style="@style/font_16_black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_pitta_title"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:text="7 Days, 4 Weeks" />
+
+                <TextView
+                    android:id="@+id/home_ludo_description"
+                    style="@style/font_12_gray_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_pitta_plan"
+                    android:layout_marginStart="24dp"
+                    android:layout_toStartOf="@+id/home_pitta_image"
+                    android:lineHeight="20dp"
+                    android:maxLines="2"
+                    android:text="Get this plan if your body shape is medium &amp; want to be proactive at work." />
+
+                <Button
+                    android:id="@+id/home_pitta_plan_button"
+                    style="@style/font_16_white_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/home_pitta_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_fill_green"
+                    android:text="Buy Now ₹299/-"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background_border_green">
+
+                <ImageView
+                    android:id="@+id/home_kapha_image"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_kapha_dosha" />
+
+                <TextView
+                    android:id="@+id/home_kapha_title"
+                    style="@style/font_24_green_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Kapha Dosha" />
+
+                <TextView
+                    android:id="@+id/home_kapha_plan"
+                    style="@style/font_16_black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_kapha_title"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:text="7 Days, 4 Weeks" />
+
+                <TextView
+                    android:id="@+id/home_kapha_description"
+                    style="@style/font_12_gray_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_kapha_plan"
+                    android:layout_marginStart="24dp"
+                    android:layout_toStartOf="@+id/home_kapha_image"
+                    android:lineHeight="20dp"
+                    android:maxLines="2"
+                    android:text="Get this plan if your body shape is fat &amp; want to weight loss." />
+
+                <Button
+                    android:id="@+id/home_kapha_plan_button"
+                    style="@style/font_16_white_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/home_kapha_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_fill_green"
+                    android:text="Buy Now ₹299/-"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/background_border_green">
+
+                <ImageView
+                    android:id="@+id/home_gym_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="0dp"
+                    android:src="@drawable/ic_gym_dosha" />
+
+                <TextView
+                    android:id="@+id/home_gym_title"
+                    style="@style/font_24_green_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Gym Diet" />
+
+                <TextView
+                    android:id="@+id/home_gym_plan"
+                    style="@style/font_16_black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_gym_title"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:text="7 Days, 4 Weeks" />
+
+                <TextView
+                    android:id="@+id/home_gym_description"
+                    style="@style/font_12_gray_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_gym_plan"
+                    android:layout_marginStart="24dp"
+                    android:layout_toStartOf="@+id/home_gym_image"
+                    android:lineHeight="20dp"
+                    android:maxLines="2"
+                    android:text="Get this plan if your are gym/yoga going person to be fit." />
+
+                <Button
+                    android:id="@+id/home_gym_plan_button"
+                    style="@style/font_16_white_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/home_gym_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_fill_green"
+                    android:text="Buy Now ₹299/-"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

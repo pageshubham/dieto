@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Dieto" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" >true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_fill_white_corner</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="font_12_black_medium" parent="text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_12_gray_medium" parent="text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_14_gray_regular" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:fontFamily">@font/changa_regular</item>
+    </style>
+
+    <style name="font_14_black_medium" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_14_green_medium" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_14_white_medium" parent="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_16_black_medium" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_16_white_medium" parent="text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_18_black_semibold" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_semibold</item>
+    </style>
+
+    <style name="font_18_black_bold" parent="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_bold</item>
+    </style>
+
+    <style name="font_20_black_medium" parent="text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_medium</item>
+    </style>
+
+    <style name="font_24_green_bold" parent="text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/changa_bold</item>
+    </style>
+
+    <style name="font_26_black_bold" parent="text">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_bold</item>
+    </style>
+
+    <style name="font_26_green_bold" parent="text">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/changa_bold</item>
+    </style>
+
+    <style name="font_28_black_semibold" parent="text">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/changa_semibold</item>
+    </style>
+
+</resources>
